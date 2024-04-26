@@ -1,0 +1,63 @@
+body{
+    background:rgb(136, 204, 222);
+}
+
+
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 242, 5);
+    font-size: 3em;
+    text-align: center;
+    animation-name: glow;
+    animation-duration: 10s;
+     border-radius:400px ;
+}
+
+#titel{
+   
+
+    animation-name: rotate2;
+    animation-duration: 5s;
+}
+#Haustier{
+    width: 100px;
+    height: 100px;
+    animation-name: grow;
+    animation-duration: 4s;
+}
+#test{
+    text-align: center;
+}
+
+
+@keyframes recht{
+ from{transform: translateX(1400px);}   
+}
+@keyframes moveRight{
+    to{transform: translateX(1400px);}
+}
+@keyframes down{
+    to{transform: translateY(1000px);}
+}
+@keyframes slideUp{
+    from{transform: translateY(0px);}
+} 
+@keyframes rotate{
+    from{transform: rotate(360deg);}
+}
+@keyframes rotate1{
+    to{transform: rotateZ(360deg);}
+}
+@keyframes rotate2{
+    50%{transform: rotate(360deg);}
+}
+@keyframes grow{
+    50%{transform: scale(2,2);}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5);}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 10px 10px rgb(227, 125, 36);}
+}
